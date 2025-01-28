@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trojanowski-Zadanie11</title>
-    <script>
-        function obliczSekundy() {
-            const dzien1 = parseInt(prompt("Podaj pierwszy numer dnia (D1_tro):", ""));
-            const dzien2 = parseInt(prompt("Podaj drugi numer dnia (D2_tro):", ""));
-
-            if (!isNaN(dzien1) && !isNaN(dzien2) && dzien1 >= dzien2 && dzien1 >= 1 && dzien2 >= 1 && dzien1 <= 31 && dzien2 <= 31) {
-                const roznica = dzien1 - dzien2;
-                const sekundy = roznica * 24 * 60 * 60;
-                document.write(`<p style='color: green; font-size: ${30 + 29}px;'>Różnica w sekundach: ${sekundy} sekund</p>`);
-            } else {
-                document.write("Podano nieprawidłowe dane.");
-            }
-        }
-    </script>
+    <title>Ile sekund między dniami</title>
+    <meta charset="utf-8">
 </head>
 <body>
-    <h1>Zadanie 11 - Trojanowski</h1>
-    <button onclick="obliczSekundy()">Oblicz różnicę w sekundach</button>
+<div style="color:green; font-size:59px;">
+    <script language="JavaScript">
+        var D1 = parseInt(prompt("Podaj numer pierwszego dnia (D1):", ""));
+        var D2 = parseInt(prompt("Podaj numer drugiego dnia (D2):", ""));
+        var iloscSekund = (D1 - D2) * 24 * 60 * 60;
+
+        document.write("Ilość sekund między dniami: " + iloscSekund + " sekund.");
+    </script>
+</div>
 </body>
 </html>
