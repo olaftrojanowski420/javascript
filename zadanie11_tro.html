@@ -1,17 +1,19 @@
-<!DOCTYPE html>
 <html lang="pl">
 <head>
-    <title>Zadanie11</title>
+    <title>Ile sekund między dniami</title>
     <meta charset="utf-8">
 </head>
 <body>
-<div style="color:green; font-size:59px;">
+<div style="color:green; font-size:30px;">
     <script language="JavaScript">
-        var D1_tro = parseInt(prompt("Podaj numer pierwszego dnia (D1):", ""));
-        var D2_tro = parseInt(prompt("Podaj numer drugiego dnia (D2):", ""));
-        var iloscSekund = (D1 - D2) * 24 * 60 * 60;
-
-        document.write("Ilość sekund między dniami: " + iloscSekund + " sekund.");
+        var D1 = parseInt(prompt("Podaj numer pierwszego dnia (D1):", ""));
+        var D2 = parseInt(prompt("Podaj numer drugiego dnia (D2):", ""));
+        if (!isNaN(D1) && !isNaN(D2) && D1 >= D2 && D1 <= 31 && D2 >= 1) {
+            var iloscSekund = (D1 - D2) * 24 * 60 * 60;
+            document.write("Ilość sekund między dniami: " + iloscSekund + " sekund.");
+        } else {
+            document.write("Podano nieprawidłowe dane. Upewnij się, że D1 >= D2 i oba dni są w zakresie od 1 do 31.");
+        }
     </script>
 </div>
 </body>
