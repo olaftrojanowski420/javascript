@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Ile sekund między dniami i godzinami</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<div style="color:green; font-size:30px;">
+    <script language="JavaScript">
+        var D1 = parseInt(prompt("Podaj numer pierwszego dnia (D1):", ""));
+        var G1 = parseInt(prompt("Podaj godzinę pierwszego dnia (G1):", ""));
+        var D2 = parseInt(prompt("Podaj numer drugiego dnia (D2):", ""));
+        var G2 = parseInt(prompt("Podaj godzinę drugiego dnia (G2):", ""));
+
+        var iloscSekund = ((D1 - D2) * 24 * 60 * 60) + ((G1 - G2) * 60 * 60);
+
+        document.write("Ilość sekund między dniami i godzinami: " + iloscSekund + " sekund.");
+    </script>
+</div>
+</body>
+</html>
