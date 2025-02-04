@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 20 - Trojanowski</title>
+    <script>
+        function AB_tro(xa, ya, xb, yb) {
+            return Math.sqrt(Math.pow(xb - xa, 2) + Math.pow(yb - ya, 2));
+        }
+        function BC_tro(xb, yb, xc, yc) {
+            return Math.sqrt(Math.pow(xc - xb, 2) + Math.pow(yc - yb, 2));
+        }
+        function AC_tro(xa, ya, xc, yc) {
+            return Math.sqrt(Math.pow(xc - xa, 2) + Math.pow(yc - ya, 2));
+        }
+        function obliczBoki() {
+            var xa = parseFloat(document.getElementById('xa').value);
+            var ya = parseFloat(document.getElementById('ya').value);
+            var xb = parseFloat(document.getElementById('xb').value);
+            var yb = parseFloat(document.getElementById('yb').value);
+            var xc = parseFloat(document.getElementById('xc').value);
+            var yc = parseFloat(document.getElementById('yc').value);
+
+            var AB = AB_tro(xa, ya, xb, yb);
+            var BC = BC_tro(xb, yb, xc, yc);
+            var AC = AC_tro(xa, ya, xc, yc);
+
+            document.getElementById("wyniki").innerHTML = `AB: ${AB.toFixed(2)} cm<br>BC: ${BC.toFixed(2)} cm<br>AC: ${AC.toFixed(2)} cm`;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="obliczBoki(); return false;">
+        <label>Xa: <input type="text" id="xa"></label>
+        <label>Ya: <input type="text" id="ya"></label>
+        <label> Xb: <input type="text" id="xb"></label>
+        <label> Yb: <input type="text" id="yb"></label>
+        <label> Xc: <input type="text" id="xc"></label>
+        <label> Yc: <input type="text" id="yc"></label>
+        <button type="submit">Oblicz</button>
+    </form>
+    <p id="wyniki"></p>
+</body>
+</html>
