@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+function klient(nazwisko_k, imie_k, zawod_k) {
+    this.nazwisko = nazwisko_k;
+    this.imie = imie_k;
+    this.zawod = zawod_k;
+}
+
+klient.prototype.wypisz = function () {
+    alert(this.nazwisko + ' ' + this.imie + ' ' + this.zawod);
+};
+
+var osoba1 = new klient("Kowalski", "Jan", "kierowca");
+var osoba2 = new klient("Nowak", "Anna", "sekretarka");
+
+osoba1.wypisz();
+osoba2.wypisz();
+
+document.write("Dostęp do właściwości:<br>");
+document.write("Klient pierwszy: " + osoba1.nazwisko + " " + osoba1.imie + " " + osoba1.zawod + "<br>");
+
+
+osoba1.wiek = 30;
+
+
+function osoba1_pokaz_wiek() {
+    alert("Wiek klienta: " + osoba1.wiek);
+}
+
+osoba1_pokaz_wiek();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe
+</body>
+</html>
