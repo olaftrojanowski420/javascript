@@ -36,23 +36,57 @@ i funkcji, trzeba tylko przed ich nazwą umieścić nazwę obiektu, którego są
     </ul>
     
 <h3><b>4.Konstruowanie obiektu na podstawie przykładu	&rarr; obiekt ma trzy pola oraz jedną metodę.</h3></b><br>
-    <p><code>var osoba_1 =
-{
-nazwisko : ‘Kowalski’,
-imie :’Jan’,
-zawod :’piekarz’,
-wyświetl :function ()
-{
-Document.write(this.nazwisko + ‘ ‘ + this.imie)
-}
-}
-Uwaga1:
-Słowo kluczowe this  pozwala odwołać się do pola lub metody obiektu z wnętrza tego obiektu.
-Uwaga2:
-Metody i pola muszą być odzielne przecinkami w obrębie jednego obiektu.</code></p>
+    <code>var osoba_1 =
+<p>{</p>
+    <p>nazwisko : ‘Kowalski’,</p>
+<p>imie :’Jan’,</p>
+<p>zawod :’piekarz’,</p>
+<p>wyświetl :function ()</p>
+<p>{</p>
+<p>Document.write(this.nazwisko + ‘ ‘ + this.imie)</p>
+<p>}</p>
+<p>}</p>
+</code>
 <h3><b>5.Znaczenie słowa this. Jak oddzielamy pola oraz metody? (odpowiedź poniżej)</h3></b><br>
+<p>Słowo kluczowe <b>this</b> &rarr; pozwala odwołać się do pola lub metody obiektu z wnętrza tego obiektu.</p>
+<p>Metody i pola muszą być odzielne przecinkami w obrębie jednego obiektu.</p>
 <h3><b>6.Konstruktor w JS na podstawie przykładu wraz z opisem.</h3></b><br>
+<p>Zostanie utworzony konstruktor o nazwie klient z właściwościami nazwisko, imie, zawod oraz metodą wypisz(). 
+    Właściwościom obiektu zostały przypisane wartości parametrów.</p>
+    <code><p>function klient(nazwisko_k,imie_k,zawod_k)</p>
+<p>{</p>
+<p>this.nazwisko=nazwisko_k;</p>
+<p>this.imie=imie_k;</p>
+<p>this.zawod=zawod_k;</p>
+<p>wypisz = function ()</p>
+<p>{</p>
+<p>alert(this.nazwisko + ' ' + this.imie)</p>
+<p>}</p>
+<p>}</p></code>
 <h3><b>7.Znaczenie słowa kluczowego New wraz z przykładem.</h3></b><br>
+<p>Do utworzenia <b><u>nowego obiektu</u></b> na podstawie konstruktora stosowane jest słowo kluczowe new.</p>
+    <code>
+       <p> var osoba1 = new klient('Kowalski', 'Jan', 'kierowca');</p>
+<p>var osoba2 = new klient('Nowak', 'Anna', 'sekretarka');</p>
+    </code>
 <h3><b>8.Znaczenie słowa kluczowego prototype wraz z przykładem i opisem ( szczególnie ważny tekst pogrubiony).</h3></b><br>
+    <code><p>function klient()</p>
+<p>{</p>
+<p>this.nazwisko='Bielski';</p>
+<p>this.imie='Paweł';</p>
+<p>}</p>
+<p>klient.prototype.pisz_dane = function ()</p>
+<p>{</p>
+<p>document.write(this.nazwisko + ' ' + this.imie)</p>
+<p>}</p>
+<p>klient.prototype.zawod = 'kierowca';</p>
+<p>var osoba1 = new klient();</p>
+<p>osoba1.pisz_dane();</p></code>
+    <p>W definicji konstruktora nie zostały zadeklarowane żadne metody i właściwości. 
+        Dopiero po użyciu właściwości prototype została dodana metoda pisz_dane oraz właściwość zawod. 
+        Od tej pory każdy nowo tworzony obiekt na podstawie konstruktora klient będzie posiadał 
+        tę dodatkową właściwość i metodę.</p>
+<p><b>Właściwość prototype może być również wykorzystana do dodawania 
+    dodatkowych metod lub właściwości do istniejących obiektów.</b></p>
 </body>
 </html>
