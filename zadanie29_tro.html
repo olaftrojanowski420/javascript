@@ -10,24 +10,46 @@
     
 <h3><b>1.W jaki sposób można określić właściwość danego obiektu ( dwa sposoby wraz z przykładami)? (odpowiedź poniżej)</h3></b><br>
     <p>Właściwość danego obiektu można określić (wpisać daną do pola odpowiedzialnego za właściwość)</p>
-<p>Sposób 1
-Używając zapisu postaci:
-a)
-nazwa_obiektu.nazwa_właściwości="tekst";  dla właściwości typu tekstowego
-np.
-auto.marka="Opel Omega";
-b)
-nazwa_obiektu.nazwa_właściwości=liczba;  dla właściwości typu liczbowego
-np.
-auto.rok=1996;
-auto.cena=25000;
-Sposób 2
-używając zapisu postaci:
-nazwa_obiektu[nazwa_właściwości];
-np. auto[cena]=25000;</p>
+<p>Sposób 1</p>
+<p>Używając zapisu postaci:</p>
+<p>a)</p>
+<p>nazwa_obiektu.nazwa_właściwości="tekst"; &rarr; dla właściwości typu tekstowego</p>
+<p>np. auto.marka="Opel Omega";</p>
+<p>b)</p>
+<p>nazwa_obiektu.nazwa_właściwości=liczba; &rarr; dla właściwości typu liczbowego</p>
+<p>np. auto.rok=1996;</p>
+<p>auto.cena=25000;</p>
+<p>Sposób 2</p>
+<p>używając zapisu postaci:</p>
+<p>nazwa_obiektu[nazwa_właściwości];</p>
+<p>np. auto[cena]=25000;</p>
 <h3><b>2.W jaki sposób można odwołać się do pól (właściwości) i metod? (odpowiedź poniżej)</h3></b><br>
+    <p>Do właściwości i metod można się odwołać podobnie jak do zwykłych zmiennych
+i funkcji, trzeba tylko przed ich nazwą umieścić nazwę obiektu, którego są elementami</p>
 <h3><b>3.Wymień cechy charakterystyczne konstruktora. (odpowiedź poniżej)</h3></b><br>
-<h3><b>4.Konstruowanie obiektu na podstawie przykładu	&rarr; obiekt ma trzy pola oraz jedną metodę.</h3></b><br>   
+    <ul>
+        <li>jest wywoływany (uruchamiany) automatycznie w chwili tworzenia obiektu danej klasy - na rzecz tego obiektu,</li>
+        <li>nazywa się tak samo jak klasa,</li>
+        <li>nie zwraca żadnej wartości ,</li>
+        <li>może przyjmować argumenty - tak jak zwykła funkcja czy metoda, aby następnie powołać do życia obiekt
+            za pomocą operatora <b>new.</b></li>
+    </ul>
+    
+<h3><b>4.Konstruowanie obiektu na podstawie przykładu	&rarr; obiekt ma trzy pola oraz jedną metodę.</h3></b><br>
+    <p><code>var osoba_1 =
+{
+nazwisko : ‘Kowalski’,
+imie :’Jan’,
+zawod :’piekarz’,
+wyświetl :function ()
+{
+Document.write(this.nazwisko + ‘ ‘ + this.imie)
+}
+}
+Uwaga1:
+Słowo kluczowe this  pozwala odwołać się do pola lub metody obiektu z wnętrza tego obiektu.
+Uwaga2:
+Metody i pola muszą być odzielne przecinkami w obrębie jednego obiektu.</code></p>
 <h3><b>5.Znaczenie słowa this. Jak oddzielamy pola oraz metody? (odpowiedź poniżej)</h3></b><br>
 <h3><b>6.Konstruktor w JS na podstawie przykładu wraz z opisem.</h3></b><br>
 <h3><b>7.Znaczenie słowa kluczowego New wraz z przykładem.</h3></b><br>
