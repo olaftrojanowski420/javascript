@@ -12,8 +12,8 @@
   <p>Programowanie strukturalne, Programowanie obiektowe</p><br>
 <h1><b>2. Opisz paradygmat programowania strukturalnego. Założenia programowania strukturalnego.</h3></b><br>
   <p>paradygmat programowania opierający się na podziale kodu źródłowego programu na procedury i hierarchicznie 
-    ułożone bloki z wykorzystaniem struktur kontrolnych w postaci instrukcji wyboru i pętli.</p><br>
-  <p>Założenia programowania strukturalnego</p><br>
+    ułożone bloki z wykorzystaniem struktur kontrolnych w postaci instrukcji wyboru i pętli.</p>
+  <p>Założenia programowania strukturalnego</p>
   <ol>
     <li>Podzielone bloki kodu mają jeden punkt wejścia (mogą mieć wiele punktów wyjścia),</li>
     <li>Wykonywanie wyrażeń w określonej kolejności,</li>
@@ -23,18 +23,45 @@
     <li>Unikanie instrukcji break, continua,</li>
     <li>W <u>programowaniu proceduralnym</u> (strukturalne) funkcje i zmienne opisujące dany przedmiot nie są ze sobą powiązane.</li>
   </ol><br>
-<h1><b>3.Programowanie obiektowe: definicja (angielski skrót, obiekty, stan, zachowanie, końcowa konkluzja czym jest programowanie obiektowe).</h3></b><br>
+<h1><b>3.Programowanie obiektowe: definicja (angielski skrót, obiekty, stan, zachowanie, 
+    końcowa konkluzja czym jest programowanie obiektowe).</h3></b><br>
+    <p>Programowanie obiektowe (ang. object-oriented programming) — sposób programowania, 
+        w którym programy definiuje się za pomocą:</p><ul>
+            <li>obiektów (obiekty powoływane są do życia wirtualnego przez programistę, 
+                mogą być kasowane przez programistę) np. okienka w Windows &rarr; okienko jest 
+                obiektem,</li>
+            <li>obiekt ma jakiś stan (czyli dane, w programowaniu obiektowym nazywane najczęściej polami) 
+                np. wielość okienka w Windows,</li>
+            <li>obiekt wykazuje pewne zachowanie (czyli posiada pewne procedury w programowaniu obiektowym nazywane metody). 
+                Np. jest zdefiniowana metoda do zmiany wielkości okienka.<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;Czyli obiektowy program komputerowy wyrażony jest jako zbiór takich obiektów, 
+                komunikujących się pomiędzy sobą w celu wykonywania zadań.</li>
+        </ul>
 <h1><b>4.Dlaczego stosujemy programowanie obiektowe?</h3></b><br>   
+    <ul>
+        <li>Jest to bardziej naturalne podejście przez programistę podczas tworzenia programów ponieważ otaczający nas świat
+            to różnego rodzaju przedmioty. Tworząc program komputerowy dokonujemy pewnego ich odwzorowania rzeczywistości np. 
+            definiujemy obiekt samochód. Definiujemy pola czyli jego stan np. rok produkcji, marka, kolor. Definiujemy również metody 
+            czyli co umie np. hamowanie, przyśpieszanie. Definicja obiektu jego metod i pól znajduje się w klasie.
+            Następnie na podstawie zdefiniowanego obiektu (może mieć pola oraz metody) powołujemy obiekt w pamięci wirtualnej</li>
+        <li>Programowanie obiektowe pozwala na lepsze gospodarowanie pamięciom komputera, ponieważ gdy obiekt staje się zbędny 
+            możemy go usunąć co zwolni pamięć zajmowaną przez ten obiekt. W programowaniu strukturalnym aby zwalniać pamięć
+            konieczne było stosowanie dynamicznych struktur danych np. stos czy kolejka.</li>
+        <li>W programowaniu obiektowym dobrze napisana i przetestowana klasa pozwala na stosowaniu przez innych programistów. 
+            Zaoszczędza to czas i środki pieniężne.</li>
+    </ul>
 <h1><b>5.Omów następujące pojęcia ( w krótkiej formie),</h3></b><br>
 <ul>
-  <li>Klasa</li>
-  <li>Obiekt</li>
-  <li>Właściwość</li>
-  <li>Metoda</li>
-  <li>Konstruktor</li>
-  <li>Dziedziczenie</li>
-  <li>Hermetyzacja</li>
-  <li>Poliformizm</li>
+  <li>Klasa - Klasa rodzaj foremki, która opisuje nam jak będą wyglądać tworzone na jej podstawie nowe obiekty.</li>
+  <li>Obiekt - Instancja (byt, twór) który powstał na podstawie klasy.</li>
+  <li>Właściwość - Własność obiektu, np. kolor.</li>
+  <li>Metoda - Zdolność (czynność) którą umie wykonywać obiekt, np. chodzenie (idź).</li>
+  <li>Konstruktor - Metoda wywoływana w momencie inicjalizacji obiektu.</li>
+  <li>Dziedziczenie - Klasa może dziedziczyć własności od innej klasy. Tworzymy klasę na podstawie innej klasy pobierając
+      od „rodzica” właściwości i metody</li>
+  <li>Hermetyzacja - Wewnątrz ciała klasy znajdują się pola i metody.</li>
+  <li>Poliformizm - Polimorfizm czyli wielopastaciowość.
+      Oznacza to, że dany obiekt może zmieniać swoją postać w zależności od potrzeb.</li>
 </ul>
 </body>
 </html>
