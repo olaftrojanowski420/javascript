@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head> 
+ <title>Zadanie 40 JS</title> 
+ <meta charset="utf-8"> 
+ <style> 
+  h1 { text-transform: uppercase; } 
+  
+ </style> 
+</head> 
+<body> 
+ 
+ <h1>Proste działania</h1> <br><br>
+ <h2>Trojanowski klasa 3G</h2>
+ <label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a"> 
+ <br><br> 
+ <label for="b">Podaj drugą liczbę:</label> <input type="number" id="b"> 
+ <br><br> 
+ <input type="button" value="DODAWANIE" onclick="suma_tro()"> 
+ <input type="button" value="ODEJMOWANIE" onclick="roznica_tro()"> 
+ <input type="button" value="MNOŻENIE" onclick="iloczyn_tro()"> 
+ <input type="button" value="DZIELENIE" onclick="iloraz_tro()"> 
+ <input type="button" value="TEORIA-Trojanowski" onclick="teoria_tro()">
+ <div id="wynik" style="margin-top:20px;"></div> 
+ <script> 
+  function suma_tro() 
+  { 
+   var a = document.getElementById("a").value; 
+   var b = document.getElementById("b").value; 
+   if (a == "" || b == "") 
+   { 
+   document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby."; 
+   } else 
+   { 
+    a = parseFloat(a); 
+    b = parseFloat(b); 
+    var suma_tro = a + b; 
+  document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma_tro; 
+   } 
+   //alert(a); 
+   //console.log(a); 
+  } 
+  function roznica_tro() 
+  { 
+   var a = document.getElementById("a").value; 
+   var b = document.getElementById("b").value; 
+   if (a == "" || b == "") 
+   { 
+  document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby."; 
+   } else 
+   { 
+    a = parseFloat(a); 
+    b = parseFloat(b); 
+    var roznica_tro = a - b; 
+  document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica_tro; 
+   } 
+  } 
+  function iloczyn_tro() 
+  { 
+   var a = document.getElementById("a").value; 
+   var b = document.getElementById("b").value; 
+   if (a == "" || b == "") 
+   { 
+  document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby."; 
+   } else 
+   { 
+    a = parseFloat(a); 
+    b = parseFloat(b); 
+    var iloczyn_tro = a * b; 
+  document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn_tro; 
+   } 
+  }   
+ 
+  function iloraz_tro() 
+  { 
+   var a = document.getElementById("a").value; 
+   var b = document.getElementById("b").value; 
+   if (a == "" || b == "") 
+   { 
+  document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby."; 
+   } else 
+   { 
+    a = parseFloat(a); 
+    b = parseFloat(b); 
+    if (b == 0) 
+    { 
+  document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero."; 
+    } 
+    else 
+    {         
+     var iloraz_tro = a / b; 
+  document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz_tro; 
+    } 
+   } 
+  }
+ function teoria_tro()
+  {
+document.write("<font color=green size=4>pierwsza linia teorii</font>"+"<br>"); 
+document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>label for=</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4>a</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4>&gt;</font>"); 
+document.write("<font color=red size=4>Podaj pierwszą liczbę:</font>"); 
+document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>/label</font>"+"<font color=red size=4>&gt;</font>"); 
+document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>input type=</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4>number</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4> id=</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4>a</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4>&gt;</font>"+"<br>"); 
+document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>"); 
+document.write("<font color=red size=4>wykonanie numerycznego pola formularza z opisem 'Podaj pierwszą liczbę:' a nazwa pola to 'a' </font>"+"<br>"); 
+
+
+document.write("<font color=green size=4>druga linia teorii</font>"+"<br>"); 
+document.write("<font color=red size=4>&lt;</font>"+"<font color=red size=4>input type=</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4>button</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4> </font>"); 
+document.write("<font color=red size=4>value=</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4>DODAWANIE</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4> onclick=</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4>suma()</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4>&gt;</font>"+"<br>"); 
+document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>"); 
+document.write("<font color=red size=4>Wykonanie przycisku o nazwie DODAWANIE i z takim samym napisem, kliknięcie myszką uruchamia funkcję suma(). </font>"+"<br>");
+
+
+document.write("<font color=green size=4>trzecia linia teorii</font>"+"<br>"); 
+document.write("<font color=red size=4>var a=</font>"; 
+document.write("<font color=red size=4>button</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4> </font>"); 
+document.write("<font color=red size=4>value=</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4>DODAWANIE</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4> onclick=</font>"+"<font color=red size=4>&quot;</font>"); 
+document.write("<font color=red size=4>suma()</font>"+"<font color=red size=4>&quot;</font>"+"<font color=red size=4>&gt;</font>"+"<br>"); 
+document.write("<font color=green size=4>wytłumaczenia</font>"+"<br>"); 
+document.write("<font color=red size=4>Wykonanie przycisku o nazwie DODAWANIE i z takim samym napisem, kliknięcie myszką uruchamia funkcję suma(). </font>"+"<br>");
+}   
+ </script> 
+</body> 
+</html> 
