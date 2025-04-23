@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head> 
+ <title>Zadanie 39 JS</title> 
+ <meta charset="utf-8"> 
+ <style> 
+  h1 { text-transform: uppercase; } 
+  
+ </style> 
+</head> 
+<body> 
+ <div style="color:green;">
+ <h1>MENU</h1> <br><br>
+ </div>
+ <div style="color:red;">
+ <h2>CZERWONY = 1</h2></div>
+ <br><br> 
+ <div style="color:blue;">
+ <h2>NIEBIESKI = 2</h2></div> 
+ <input type="button" name="Trojanowski" value="Oblicz" onclick="fun_tro()" /> 
+  <script> 
+    function fun_tro() { 
+      var x_tro = prompt("Podaj kolor", ""); 
+        if(x_tro == 1 || x_tro.toLowerCase() == "czerwony") { 
+  document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); } 
+        else if(x_tro == 2 || x_tro.toLowerCase() == "niebieski") { 
+  document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br />'); 
+  } 
+  } 
+ </script>
+
+</body> 
+</html> 
