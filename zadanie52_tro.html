@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 52 - Trojanowski</title>
+</head>
+
+<body>
+    <pre style="font-family: monospace; font-size: 16px; color: navy;">
+        <script>
+            var a_tro = (11 % 4) + 5;
+            var b_tro = (4 % 6) + 20; 
+
+            
+            for (var i_tro = 1; i_tro <= b_tro; i_tro++) {
+                document.write("*");
+            }
+            document.write("<br>");
+
+            
+            for (var j_tro = 1; j_tro <= a_tro - 2; j_tro++) {
+                document.write("*");
+                for (var k_tro = 1; k_tro <= b_tro - 2; k_tro++) {
+                    document.write("&nbsp;");
+                }
+                document.write("*<br>");
+            }
+
+           
+            for (var i_tro = 1; i_tro <= b_tro; i_tro++) {
+                document.write("*");
+            }
+        </script>
+    </pre>
+</body>
+
+</html>
