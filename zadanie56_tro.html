@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 56 - Trojanowski</title>
+</head>
+
+<body>
+    <div style="font-size:18px; color:black;">
+        <script>
+            function czyPierwsza_tro(n_tro) {
+                if (n_tro < 2) return false;
+                for (var dzielnik_tro = 2; dzielnik_tro <= Math.sqrt(n_tro); dzielnik_tro++) {
+                    if (n_tro % dzielnik_tro == 0) return false;
+                }
+                return true;
+            }
+
+            var licznik_tro = 0;
+            for (var i_tro = 0; i_tro <= 39; i_tro++) {
+                var w_tro = i_tro * i_tro + i_tro + 41;
+                if (czyPierwsza_tro(w_tro)) {
+                    document.write("i=" + i_tro + " w(" + i_tro + ")=" + w_tro + "<br>");
+                    licznik_tro++;
+                }
+                if (licznik_tro % 5 == 0 && licznik_tro !== 0) {
+                    confirm("Kliknij OK, aby kontynuować...");
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
