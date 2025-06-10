@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 46 - Trojanowski</title>
+</head>
+
+<body>
+    <div style="color:red; font-size:40px;">
+        <script>
+            var h_tro, a_tro;
+
+            do {
+                h_tro = parseFloat(prompt("Podaj wysokość h:", ""));
+            } while (h_tro <= 0);
+
+            do {
+                a_tro = parseFloat(prompt("Podaj podstawę a:", ""));
+            } while (!(a_tro > 0));
+
+            var pole_tro = (a_tro * h_tro) / 2;
+            document.write("Pole trójkąta = " + pole_tro.toFixed(2) + " cm²<br>");
+        </script>
+    </div>
+</body>
+
+</html>
