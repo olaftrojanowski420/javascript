@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close()
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <textarea name="sigma" cols="80" rows="20" readonly>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 57 - Trojanowski</title>
+</head>
+
+<body>
+    <div style="font-size:18px; color:black;">
+        <script>
+            var licznik_tro = 0;
+            for (var i_tro = 15; i_tro <= 30; i_tro++) {
+                var pierw2_tro = Math.sqrt(i_tro);
+                var pierw4_tro = Math.sqrt(pierw2_tro);
+
+                document.write("i=" + i_tro +
+                    " pierw_2(" + i_tro + ")=" + pierw2_tro.toFixed(2) +
+                    " pierw_4(" + i_tro + ")=" + pierw4_tro.toFixed(2) + "<br>");
+                licznik_tro++;
+
+                if (licznik_tro % 3 === 0) {
+                    confirm("Kliknij OK, aby kontynuować...");
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+ </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
