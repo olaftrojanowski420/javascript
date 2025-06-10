@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47 - Trojanowski</title>
+</head>
+
+<body>
+    <div style="color:blue; font-size:35px;">
+        <script>
+            var a_tro, b_tro, c_tro;
+            do {
+                a_tro = parseFloat(prompt("Podaj bok a:", ""));
+                b_tro = parseFloat(prompt("Podaj bok b:", ""));
+                c_tro = parseFloat(prompt("Podaj bok c:", ""));
+            } while (
+                !(a_tro > 0 && b_tro > 0 && c_tro > 0 &&
+                    a_tro + b_tro > c_tro &&
+                    a_tro + c_tro > b_tro &&
+                    b_tro + c_tro > a_tro)
+            );
+
+            document.write("Boki tworzą trójkąt: a=" + a_tro + ", b=" + b_tro + ", c=" + c_tro + "<br>");
+        </script>
+    </div>
+</body>
+
+</html>
